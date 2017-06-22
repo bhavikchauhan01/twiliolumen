@@ -15,7 +15,7 @@ class L5ServiceProvider extends LaravelServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../../config/config.php' => config_path('twilio.php'),
+            __DIR__.'/../../config/config.php' => $this->config_path('twilio.php'),
         ]);
 
         $this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'twilio');
@@ -32,5 +32,10 @@ class L5ServiceProvider extends LaravelServiceProvider
     protected function config()
     {
         return $this->app['config']->get('twilio.twilio');
+    }
+
+    protected function config_path($path = '')
+    {
+        return app()->basePath() . '/config' . ($path ? '/' . $path : $path);
     }
 }
