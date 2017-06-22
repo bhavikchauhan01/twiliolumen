@@ -1,6 +1,6 @@
 {
-    "name": "aloha/twilio",
-    "description": "Twilio API for Laravel",
+    "name": "bhavikchauhan01/twiliolumen",
+    "description": "Twilio API for Laravel Lumen",
     "type": "library",
     "keywords": ["sms","ivr","laravel","twilio"],
     "authors": [
@@ -11,9 +11,13 @@
         {
             "name": "Hannes Van De Vreken",
             "email": "vandevreken.hannes@gmail.com"
+        },
+        {
+            "name": "Bhavik Chauhan",
+            "email": "bhavikchauhan01@gmail.com"
         }
     ],
-    "homepage":"https://github.com/aloha/laravel-twilio",
+    "homepage":"https://github.com/bhavikchauhan01/twiliolumen",
     "license": "MIT",
     "require": {
         "php": ">=5.5.0",
